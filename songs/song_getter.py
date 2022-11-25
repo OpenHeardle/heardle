@@ -33,7 +33,7 @@ with open(tema+".html", encoding='utf-8') as fp:
         
 
 # write songs to txt file
-with open("lists/"+tema+'.txt', 'w', encoding='utf-8') as f:
+with open("lists_txt/"+tema+'.txt', 'w', encoding='utf-8') as f:
     for item in songs:
         print(item, file=f)
 

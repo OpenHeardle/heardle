@@ -70,7 +70,7 @@ def generate_songs_file_year(start_year, end_year=2021, file_name='default'):
     # iterate over year range
     for year in range(start_year, end_year + 1):
         print(f'getting {year}')
-        with open(f'songs/{file_name}.txt', 'a') as file:
+        with open(f'songs/lists_txt/{file_name}.txt', 'a') as file:
             songs = get_billboard_year(year)
             file.writelines([f'=== {year} ===\n', *songs])
 
@@ -83,7 +83,7 @@ def generate_songs_file_date(start_year, end_year=2021, start_month=1, end_month
     for year in range(start_year, end_year + 1):
         for month in range(start_month, end_month + 1):
             print(f'getting {month} {year}')
-            with open(f'songs/{file_name}.txt', 'a') as file:
+            with open(f'songs/lists_txt/{file_name}.txt', 'a') as file:
                 songs = get_billboard_date(year, month, 1)
                 file.writelines([f'=== {month} {year} ===\n', *songs])
 
@@ -117,12 +117,46 @@ def get_soundcloud_url(driver, song: str) -> str:
         return 'FAILED_TO_GET_SOUNDCLOUD_URL'
 
 
-def parse_songs_file(driver, file_name='default'):
+def get_soundcloud_url_request(song: str) -> str:
+    """
+    Get the soundcloud URL for the given song string.
+    """
+    try:
+        print(f'getting soundcloud for: {song}')
+
+        # generate soundcloud search url
+        url = SOUNDCLOUD_URL + urllib.parse.quote(song)
+        
+        # open webpage in selenium
+        r = requests.get(url)
+        html = r.text
+        with open("t"+'.html', 'w', encoding='utf-8') as f:
+            print(html, file=f)
+        soup = BeautifulSoup(html)
+        print(url)
+        # get url for first search result
+
+        song_url = soup.find('ul').find('li').find('a')['href']
+        #song_url = soup.find('div', {'class': 'searchItem'}).find('a', {'sc-link-primary'})['href']
+        print(song_url)
+        exit()
+        return f'https://soundcloud.com{song_url}'
+    # ctrl-c input
+    except KeyboardInterrupt:
+        exit()
+    # catch other exceptions and log error
+    except Exception as e:
+        print(e)
+        print(f'FAILED TO GET SOUNDCLOUD URL: {song}')
+        return 'FAILED_TO_GET_SOUNDCLOUD_URL'
+
+
+def parse_songs_file(driver=None, file_name='default'):
     """
     Remove duplicates from songs file and generate json output with song URLs.
     """
     # read songs from file and remove header lines
-    with open(f'songs/{file_name}.txt', 'r') as file:
+    with open(f'songs/lists_txt/{file_name}.txt', 'r', encoding="utf-8") as file:
         songs = file.readlines()
     songs = [x.strip() for x in songs if "===" not in x]
 
@@ -134,22 +168,22 @@ def parse_songs_file(driver, file_name='default'):
     print(f'=== found {len(songs_dict)} songs ===')
     
     # add open bracket for json format
-    with open(f'songs/{file_name}.json', 'w') as file:
+    with open(f'songs/lists_json/{file_name}.json', 'w') as file:
         file.write('[\n')
     
     # create json object for each song
     for song in songs_dict:
         formatted_song = {
-            'url': get_soundcloud_url(driver, song),
+            'url': get_soundcloud_url_request(song),
             'string': song,
         }
         # append json object to file
-        with open(f'songs/{file_name}.json', 'a') as file:
+        with open(f'songs/lists_json/{file_name}.json', 'a') as file:
             json.dump(formatted_song, file, indent=4)
             file.write(',\n')
 
     # add closing bracket to json file
-    with open(f'songs/{file_name}.json', 'a') as file:
+    with open(f'songs/lists_json/{file_name}.json', 'a') as file:
         file.write(']\n')
 
 
@@ -161,7 +195,9 @@ def start_driver():
 
 
 if __name__ == "__main__":
-    generate_songs_file_year(2010, file_name='recent')
-    driver = start_driver()
-    parse_songs_file(driver, 'recent')
+    #generate_songs_file_year(2010, file_name='recent')
+    #driver = start_driver()
+    #parse_songs_file(driver, 'recent')
+    parse_songs_file(None, 'asturianu')
+
 
