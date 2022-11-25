@@ -97,13 +97,13 @@ def get_soundcloud_url(driver, song: str) -> str:
     """
     try:
         print(f'getting soundcloud for: {song}')
-        sleep(3)
 
         # generate soundcloud search url
         url = SOUNDCLOUD_URL + urllib.parse.quote(song)
         
         # open webpage in selenium
         driver.get(url)
+        sleep(3)
         html = driver.page_source
 
         soup = BeautifulSoup(html)
@@ -116,9 +116,8 @@ def get_soundcloud_url(driver, song: str) -> str:
         exit()
     # catch other exceptions and log error
     except Exception as e:
-        print(e)
-
         print(f'FAILED TO GET SOUNDCLOUD URL: {song}')
+        print(e)
         return 'FAILED_TO_GET_SOUNDCLOUD_URL'
 
 
