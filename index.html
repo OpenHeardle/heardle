@@ -166,7 +166,7 @@
             }, (totalSeconds[currentGuess] * 1000));
         };
 
-        fetch(`https://raw.githubusercontent.com/OpenHeardle/heardle/main/songs/${songSet}.json`)
+        fetch(`https://raw.githubusercontent.com/OpenHeardle/heardle/main/songs/lists_json/${songSet}.json`)
             .then(response => response.json())
             .then((json) => {
                 songs = json.sort((a, b) => 0.5 - Math.random());
