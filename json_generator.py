@@ -1,10 +1,13 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+
 import requests
-from bs4 import BeautifulSoup
-from time import sleep
 import urllib.parse
 import json
+
+from bs4 import BeautifulSoup
+from time import sleep
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+
 
 
 BILLBOARD_YEAR_URL = "https://www.billboard.com/charts/year-end/"
@@ -12,7 +15,7 @@ BILLBOARD_DATE_URL = "https://www.billboard.com/charts/hot-100/"
 SOUNDCLOUD_URL = "https://soundcloud.com/search/sounds?q="
 
 # path for selenium chromedriver exec
-CHROMEDRIVER_PATH = r"chromedriver/chromedriver_win32/chromedriver.exe"
+CHROMEDRIVER_PATH = "chromedriver/chromedriver.exe"
 
 
 def get_billboard_year(year: int) -> dict:

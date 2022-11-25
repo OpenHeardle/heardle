@@ -73,7 +73,7 @@
         let score = [null, null, null, null, null, null];
         let totalSeconds = [1, 2, 4, 7, 11, 16];
         var playerTimeout = null;
-        let songSet = (new URLSearchParams(window.location.search)).get('songs') || 'default';
+        let songSet = (new URLSearchParams(window.location.search)).get('songs') || 'recent';
         var songs = [];
         var song = {};
 
@@ -165,7 +165,7 @@
             }, (totalSeconds[currentGuess] * 1000));
         };
 
-        fetch(`https://raw.githubusercontent.com/hubermjonathan/heardle/main/songs/${songSet}.json`)
+        fetch(`https://raw.githubusercontent.com/antonioalfa22/heardle/main/songs/${songSet}.json`)
             .then(response => response.json())
             .then((json) => {
                 songs = json.sort((a, b) => 0.5 - Math.random());
