@@ -1,1 +1,360 @@
 [
+    [
+        {
+            "url": "https://soundcloud.com/tejedor-music/chalaneru",
+            "string": "Chalaneru - Tejedor"
+        },
+        {
+            "url": "https://soundcloud.com/vicentediazofficial/que-tien-esta-sidrina",
+            "string": "Qu\u00e9 Tien Esta Sidrina - Vicente D\u00edaz"
+        },
+        {
+            "url": "https://soundcloud.com/celiamurnonogarcia/asturias-patria-querida",
+            "string": "Asturias Patria Querida - Celia Mur & Nono Garc\u00eda"
+        },
+        {
+            "url": "https://soundcloud.com/musicospolaoficialida/llego-la-hora-feat-dixebra-fe",
+            "string": "Lleg\u00f3 la hora - M\u00fasicos Pola Oficialid\u00e1, Dixebra, Fe de Ratas, L-R, Silvia Quesada, Corqui\u00e9u, Desakato"
+        },
+        {
+            "url": "https://soundcloud.com/pablounddestruktion/gijon",
+            "string": "Gij\u00f3n - Pablo Und Destruktion"
+        },
+        {
+            "url": "https://soundcloud.com/melendi-official/asturias-2006-remastered",
+            "string": "Asturias - 2006 Remastered Version - Melendi"
+        },
+        {
+            "url": "https://soundcloud.com/darklaemeofficial/asturies-ye-diferent",
+            "string": "Asturies ye Diferent - Dark La Eme"
+        },
+        {
+            "url": "https://soundcloud.com/vicentediazofficial/asturias-de-mi-querer",
+            "string": "Asturias de mi Querer - Vicente D\u00edaz"
+        },
+        {
+            "url": "https://soundcloud.com/felpeyu/saltones-expositos",
+            "string": "Saltones Exp\u00f3sitos - Felpeyu"
+        },
+        {
+            "url": "https://soundcloud.com/losberrones/nun-yes-tu",
+            "string": "Nun Yes T\u00fa - Los Berrones"
+        },
+        {
+            "url": "https://soundcloud.com/rasoestudio/baiuca-veleno",
+            "string": "Veleno - Baiuca, Rodrigo Cuevas"
+        },
+        {
+            "url": "https://soundcloud.com/franaviles/lleenda-feat-proyecto-sol",
+            "string": "Lleenda - Fran Avil\u00e9s, Proyecto Sol"
+        },
+        {
+            "url": "https://soundcloud.com/dixebra/nesti-mundu-traidor",
+            "string": "Nesti Mundu Traidor - Dixebra"
+        },
+        {
+            "url": "https://soundcloud.com/nordeste-music/nordeste",
+            "string": "Nordeste - Nordeste"
+        },
+        {
+            "url": "https://soundcloud.com/rozalen-sc/te-quiero-porque-te-quiero",
+            "string": "Te Quiero Porque Te Quiero (Fandangos) - Rozal\u00e9n, Rodrigo Cuevas"
+        },
+        {
+            "url": "https://soundcloud.com/algaire/llume",
+            "string": "Llume - Algaire"
+        },
+        {
+            "url": "https://soundcloud.com/aliciaalvarez/cabeza-dalgodon",
+            "string": "Cabeza D'algod\u00f3n - Alicia \u00c1lvarez"
+        },
+        {
+            "url": "https://soundcloud.com/felpeyu/quirosanu",
+            "string": "Quirosanu - Felpeyu"
+        },
+        {
+            "url": "https://soundcloud.com/guieldu/irish-fleadh",
+            "string": "Irish Fleadh - Guieldu"
+        },
+        {
+            "url": "https://soundcloud.com/nuberuofficial/ser-asturianu",
+            "string": "Ser asturianu - Nuberu"
+        },
+        {
+            "url": "https://soundcloud.com/nacho-vegas-official/luz-de-agosto-en-gijon",
+            "string": "Luz de Agosto en Gij\u00f3n - Nacho Vegas"
+        },
+        {
+            "url": "https://soundcloud.com/anabelsantiagoofficial/traimela",
+            "string": "Tr\u00e1imela - Anabel Santiago"
+        },
+        {
+            "url": "FAILED_TO_GET_SOUNDCLOUD_URL",
+            "string": "El Mio Vec\u00edn - Falkatr\u00faa"
+        },
+        {
+            "url": "https://soundcloud.com/muyeres/don-federico",
+            "string": "Don Federico - Muyeres"
+        },
+        {
+            "url": "https://soundcloud.com/musicvicman/el-portalin-de-piedra",
+            "string": "En el Portalin de Piedra - V\u00edctor Manuel"
+        },
+        {
+            "url": "https://soundcloud.com/dixebra/manana-fria-live",
+            "string": "Ma\u00f1ana Fr\u00eda - En Directo - Dixebra"
+        },
+        {
+            "url": "https://soundcloud.com/melendi-official/la-mi-mozuca",
+            "string": "La Mi Mozuca - Melendi"
+        },
+        {
+            "url": "FAILED_TO_GET_SOUNDCLOUD_URL",
+            "string": "Ribeseya - Baxel, Paul Balmori, Rigu Su\u00e1rez"
+        },
+        {
+            "url": "https://soundcloud.com/nuberuofficial/en-el-pozu-maria-luisa",
+            "string": "En el pozu Mar\u00eda Luisa - Nuberu"
+        },
+        {
+            "url": "https://soundcloud.com/isabelmarco/el-respirar-de-las-lenguas-3",
+            "string": "L'alendar de les Piedres (Asturianu) - Isabel Marco"
+        },
+        {
+            "url": "https://soundcloud.com/staytons/mientras-haya-baile",
+            "string": "Mientras Haya Baile - Staytons"
+        },
+        {
+            "url": "https://soundcloud.com/user-696476990/albor",
+            "string": "Albor - Bango"
+        },
+        {
+            "url": "https://soundcloud.com/canciosdechigre/soy-de-verdiciu-feat-los",
+            "string": "Soy de Verdiciu - Cancios de Chigre, Orfe\u00f3n Gijon\u00e9s, Los Xustos"
+        },
+        {
+            "url": "https://soundcloud.com/nacho-vegas-official/libertariana-song",
+            "string": "Rapaza de San Antolin - Nacho Vegas"
+        },
+        {
+            "url": "https://soundcloud.com/skamalarede/rebolleres-soi-de-verdiciu",
+            "string": "Rebolleres. Soi de Verdiciu - Cantares de Chigre - Skama la rede"
+        },
+        {
+            "url": "FAILED_TO_GET_SOUNDCLOUD_URL",
+            "string": "La Planta 14 (with Marisa Valle Roso) - En Directo - V\u00edctor Manuel, Marisa Valle Roso"
+        },
+        {
+            "url": "https://soundcloud.com/vicentediazofficial/gijon-del-alma",
+            "string": "Gij\u00f3n Del Alma - Vicente D\u00edaz"
+        },
+        {
+            "url": "https://soundcloud.com/joaquincalderon/cu-a-victor-manuel",
+            "string": "Soy De Gij\u00f3n - JOSE MANUEL IGLESIAS"
+        },
+        {
+            "url": "https://soundcloud.com/calea-music/ya-si-sos-pintalarrama",
+            "string": "Ya si sos pintalarrama - Calea"
+        },
+        {
+            "url": "https://soundcloud.com/nacho-vegas-official/el-don-de-la-ternura",
+            "string": "El don de la ternura - Nacho Vegas"
+        },
+        {
+            "url": "FAILED_TO_GET_SOUNDCLOUD_URL",
+            "string": "Cam\u00edn de Llibert\u00e1 - Avientu"
+        },
+        {
+            "url": "https://soundcloud.com/litz-music/quedate-o-vete-nse",
+            "string": "Qu\u00e9date o Vete (nse) - Litz"
+        },
+        {
+            "url": "https://soundcloud.com/rodrigocuevas-music/la-magia-de-tu-melena",
+            "string": "La Magia de Tu Melena - Rodrigo Cuevas, ORTIGA"
+        },
+        {
+            "url": "https://soundcloud.com/nuberuofficial/nora",
+            "string": "Nora - Nuberu"
+        },
+        {
+            "url": "https://soundcloud.com/fernandovalleroso/la-romeria-de-san-andres",
+            "string": "La romer\u00eda de San Andr\u00e9s - Fernando Valle Roso, Silvia Moreno"
+        },
+        {
+            "url": "https://soundcloud.com/armaxofficial/zona-minada-feat-13-palabras",
+            "string": "Zona Minada - Arma X, 13 Palabras"
+        },
+        {
+            "url": "https://soundcloud.com/aliciaalvarez/prestame-pola-vida",
+            "string": "Pr\u00e9stame Pola Vida - Alicia \u00c1lvarez"
+        },
+        {
+            "url": "FAILED_TO_GET_SOUNDCLOUD_URL",
+            "string": "Mu\u00f1eiras de Tormaleo y Boal - Orquesta C\u00e9ltica Asturiana"
+        },
+        {
+            "url": "https://soundcloud.com/asturianaminingcompany/la-trova-del-mineru",
+            "string": "La trova del mineru - Asturiana Mining Company"
+        },
+        {
+            "url": "https://soundcloud.com/labandinaofficial/a-la-vera-de-borin",
+            "string": "A la Vera de Bor\u00edn - La Bandina"
+        },
+        {
+            "url": "https://soundcloud.com/joaquinpixanofficial/jota-de-cangas-de-narcea",
+            "string": "Jota de Cangas de Narcea - Joaquin Pixan"
+        },
+        {
+            "url": "https://soundcloud.com/eltambordelaabadia/muneira-asturiana",
+            "string": "Mu\u00f1eira Asturiana - El Tambor De La Abad\u00eda"
+        },
+        {
+            "url": "https://soundcloud.com/josemanueltejedor/lluz",
+            "string": "Lluz - Jose Manuel Tejedor"
+        },
+        {
+            "url": "https://soundcloud.com/tolimorilla/huracan-hurricane",
+            "string": "Hurac\u00e1n (Hurricane) - Toli morilla"
+        },
+        {
+            "url": "https://soundcloud.com/brasrodrigo/remanecer",
+            "string": "Remanecer - Bras Rodrigo"
+        },
+        {
+            "url": "https://soundcloud.com/latarrancha/somos-version-2018-feat",
+            "string": "Somos - Versi\u00f3n 2018 - La Tarrancha, delagua"
+        },
+        {
+            "url": "https://soundcloud.com/darklaemeofficial/un-asturiano-en-madrid",
+            "string": "Un Asturiano en Madrid - Dark La Eme"
+        },
+        {
+            "url": "https://soundcloud.com/spantalaxente/sones-asi-suena-esta-tierra",
+            "string": "Sones: 'As\u00ed Suena Esta Tierra' - Spanta la Xente"
+        },
+        {
+            "url": "https://soundcloud.com/dixebra/danza",
+            "string": "La Danza - XXV - Dixebra"
+        },
+        {
+            "url": "https://soundcloud.com/musicvicman/marinero-quiero-madre",
+            "string": "Marinero Quiero Madre - V\u00edctor Manuel"
+        },
+        {
+            "url": "https://soundcloud.com/losinhumanos/que-culpa-tengo-yo-de-tener-la",
+            "string": "\u00bfQu\u00e9 Culpa Tengo Yo? - Dark La Eme"
+        },
+        {
+            "url": "FAILED_TO_GET_SOUNDCLOUD_URL",
+            "string": "Coraz\u00f3n de Lat\u00f3n - Staytons, Nat Simons"
+        },
+        {
+            "url": "https://soundcloud.com/brasrodrigo/arxentola",
+            "string": "Arxentola - Bras Rodrigo"
+        },
+        {
+            "url": "https://soundcloud.com/blimaofficial/timorato-entamu-quien-quier",
+            "string": "Timorato - Blima"
+        },
+        {
+            "url": "https://soundcloud.com/manoloquiros/fiesta-con-gaita",
+            "string": "Fiesta Con Gaita - Manolo Quir\u00f3s"
+        },
+        {
+            "url": "https://soundcloud.com/musicvicman/paxarinos-1",
+            "string": "Paxari\u00f1os - V\u00edctor Manuel"
+        },
+        {
+            "url": "https://soundcloud.com/hevia-official/tirador",
+            "string": "Tirador - Hevia"
+        },
+        {
+            "url": "https://soundcloud.com/hugochavezfrias/ringtone-chavez-patria-querida",
+            "string": "Patria Querida - Ghaziel"
+        },
+        {
+            "url": "https://soundcloud.com/nacho-vegas-official/pasamos-el-negron",
+            "string": "(Pasamos) El Negr\u00f3n - Nacho Vegas"
+        },
+        {
+            "url": "https://soundcloud.com/loscarabelas/cuando-fui-a-covadonga",
+            "string": "Cuando Fui a Covadonga - Los Carabelas"
+        },
+        {
+            "url": "https://soundcloud.com/musicvicman/la-romeria-1",
+            "string": "La Romeria - V\u00edctor Manuel"
+        },
+        {
+            "url": "https://soundcloud.com/ewuer-diaz/vicente-fernandes-la-muerte-de",
+            "string": "Covadonga - Vicente D\u00edaz"
+        },
+        {
+            "url": "https://soundcloud.com/picnessanba/si-tengo-con-quine-salir-pero-estan-ocupados-estando-mal-y-no-los-quiero-molestar",
+            "string": "\u00a1No Quiero Salir! - Los Bons\u00e1is"
+        },
+        {
+            "url": "https://soundcloud.com/au70540/tomasin",
+            "string": "Tomas\u00edn - \u00bfA\u00fa?"
+        },
+        {
+            "url": "https://soundcloud.com/cerezal-music/la-polesina",
+            "string": "La Polesina - Cerezal"
+        },
+        {
+            "url": "https://soundcloud.com/avientuofficial/estrelles-ensin-nome",
+            "string": "Estrelles Ensin Nome - Avientu"
+        },
+        {
+            "url": "https://soundcloud.com/manoloquiros/xiringueelu-2000",
+            "string": "Xiring\u00fcelu 2000 - Manolo Quir\u00f3s"
+        },
+        {
+            "url": "https://soundcloud.com/xuacuamieva/muneira-de-remis",
+            "string": "Mu\u00f1eira de Remis - Xuacu Amieva"
+        },
+        {
+            "url": "https://soundcloud.com/vicentediazofficial/pescadores",
+            "string": "Pescadores - Vicente D\u00edaz"
+        },
+        {
+            "url": "https://soundcloud.com/user-417422045/asturias-victor-manuel",
+            "string": "Asturias - V\u00edctor Manuel"
+        },
+        {
+            "url": "https://soundcloud.com/hevia-official/busindre-reel",
+            "string": "Busindre Reel - Hevia"
+        },
+        {
+            "url": "https://soundcloud.com/silviaquesada/la-mesma-revolucion",
+            "string": "La Mesma Revoluci\u00f3n - Silvia Quesada"
+        },
+        {
+            "url": "FAILED_TO_GET_SOUNDCLOUD_URL",
+            "string": "Veis Volver (Xota Cangas) - L-R"
+        },
+        {
+            "url": "https://soundcloud.com/losberrones/pais-de-pandereta-1",
+            "string": "Pa\u00eds de Pandereta - Los Berrones"
+        },
+        {
+            "url": "https://soundcloud.com/hevia-official/el-garrot-n",
+            "string": "El garrot\u00edn - Hevia"
+        },
+        {
+            "url": "FAILED_TO_GET_SOUNDCLOUD_URL",
+            "string": "La Marbella Nueva (con Tuenda) - Dark La Eme"
+        },
+        {
+            "url": "https://soundcloud.com/rodrigocuevas-music/verdiciu-feat-celerina-sound-1",
+            "string": "Verdiciu - Rodrigo Cuevas, Celerina Sound System"
+        },
+        {
+            "url": "https://soundcloud.com/skamalarede/la-resaca-ya-vendra",
+            "string": "La Resaca Y\u00e1 Vendr\u00e1 - Skama la rede"
+        },
+        {
+            "url": "https://soundcloud.com/skamalarede/escoyi",
+            "string": "Escoy\u00ed - Skama la rede"
+        }
+        ]
+        
