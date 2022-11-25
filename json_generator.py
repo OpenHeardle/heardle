@@ -125,7 +125,7 @@ def parse_songs_file(driver, file_name='default'):
     Remove duplicates from songs file and generate json output with song URLs.
     """
     # read songs from file and remove header lines
-    with open(f'songs/{file_name}.txt', 'r') as file:
+    with open(f'songs/lists/{file_name}.txt', 'r', encoding="utf-8") as file:
         songs = file.readlines()
     songs = [x.strip() for x in songs if "===" not in x]
 
@@ -164,7 +164,7 @@ def start_driver():
 
 
 if __name__ == "__main__":
-    generate_songs_file_year(2010, file_name='recent')
+    #generate_songs_file_year(2010, file_name='recent')
     driver = start_driver()
-    parse_songs_file(driver, 'recent')
+    parse_songs_file(driver, '/asturianu')
 
