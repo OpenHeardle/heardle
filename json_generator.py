@@ -97,13 +97,13 @@ def get_soundcloud_url(driver, song: str) -> str:
     """
     try:
         print(f'getting soundcloud for: {song}')
+        sleep(3)
 
         # generate soundcloud search url
         url = SOUNDCLOUD_URL + urllib.parse.quote(song)
         
         # open webpage in selenium
         driver.get(url)
-        sleep(3)
         html = driver.page_source
 
         soup = BeautifulSoup(html)
@@ -115,7 +115,9 @@ def get_soundcloud_url(driver, song: str) -> str:
     except KeyboardInterrupt:
         exit()
     # catch other exceptions and log error
-    except:
+    except Exception as e:
+        print(e)
+
         print(f'FAILED TO GET SOUNDCLOUD URL: {song}')
         return 'FAILED_TO_GET_SOUNDCLOUD_URL'
 
@@ -126,19 +128,21 @@ def get_soundcloud_url_request(song: str) -> str:
     """
     try:
         print(f'getting soundcloud for: {song}')
-
+        sleep(1)
         # generate soundcloud search url
         url = SOUNDCLOUD_URL + urllib.parse.quote(song)
-        
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+        }
         # open webpage in selenium
-        r = requests.get(url)
+        r = requests.get(url, headers=headers)
         html = r.text
         with open("t"+'.html', 'w', encoding='utf-8') as f:
             print(html, file=f)
         soup = BeautifulSoup(html, features="html.parser")
         # get url for first search result
-
-        song_url = soup.find_all('ul')[1].find('li').find('a')['href']
+        s = soup.find_all('ul')
+        song_url = s[1].find('li').find('a')['href']
         #song_url = soup.find('div', {'class': 'searchItem'}).find('a', {'sc-link-primary'})['href']
         return f'https://soundcloud.com{song_url}'
     # ctrl-c input
@@ -147,7 +151,10 @@ def get_soundcloud_url_request(song: str) -> str:
     # catch other exceptions and log error
     except Exception as e:
         print(e)
+        print(s)
+        print(song_url)
         print(f'FAILED TO GET SOUNDCLOUD URL: {song}')
+        exit()
         return 'FAILED_TO_GET_SOUNDCLOUD_URL'
 
 
@@ -167,24 +174,23 @@ def parse_songs_file(driver=None, file_name='default'):
 
     print(f'=== found {len(songs_dict)} songs ===')
     
-    # add open bracket for json format
-    with open(f'songs/lists_json/{file_name}.json', 'w') as file:
-        file.write('[\n')
-    
+    songs = []
     # create json object for each song
     for song in songs_dict:
         formatted_song = {
-            'url': get_soundcloud_url_request(song),
+            'url': get_soundcloud_url(driver, song),
             'string': song,
         }
+        if formatted_song['url'] == 'FAILED_TO_GET_SOUNDCLOUD_URL':
+            continue
+        songs.append(formatted_song)
         # append json object to file
-        with open(f'songs/lists_json/{file_name}.json', 'a') as file:
-            json.dump(formatted_song, file, indent=4)
-            file.write(',\n')
+    # write songs list to json file
+    with open(f'songs/lists_json/{file_name}.json', 'w') as file:
+        file.write(json.dumps(songs, indent=4))
 
-    # add closing bracket to json file
-    with open(f'songs/lists_json/{file_name}.json', 'a') as file:
-        file.write(']\n')
+
+
 
 
 def start_driver():
@@ -196,8 +202,8 @@ def start_driver():
 
 if __name__ == "__main__":
     #generate_songs_file_year(2010, file_name='recent')
-    #driver = start_driver()
-    #parse_songs_file(driver, 'recent')
-    parse_songs_file(None, 'top50esp')
+    driver = start_driver()
+    parse_songs_file(driver, 'asturianu')
+    #parse_songs_file(None, 'asturianu')
 
 
