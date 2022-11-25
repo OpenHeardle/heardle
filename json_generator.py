@@ -1,10 +1,13 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+
 import requests
-from bs4 import BeautifulSoup
-from time import sleep
 import urllib.parse
 import json
+
+from bs4 import BeautifulSoup
+from time import sleep
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+
 
 
 BILLBOARD_YEAR_URL = "https://www.billboard.com/charts/year-end/"
@@ -12,7 +15,7 @@ BILLBOARD_DATE_URL = "https://www.billboard.com/charts/hot-100/"
 SOUNDCLOUD_URL = "https://soundcloud.com/search/sounds?q="
 
 # path for selenium chromedriver exec
-CHROMEDRIVER_PATH = r"chromedriver/chromedriver_win32/chromedriver.exe"
+CHROMEDRIVER_PATH = "chromedriver/chromedriver.exe"
 
 
 def get_billboard_year(year: int) -> dict:
@@ -132,14 +135,11 @@ def get_soundcloud_url_request(song: str) -> str:
         html = r.text
         with open("t"+'.html', 'w', encoding='utf-8') as f:
             print(html, file=f)
-        soup = BeautifulSoup(html)
-        print(url)
+        soup = BeautifulSoup(html, features="html.parser")
         # get url for first search result
 
-        song_url = soup.find('ul').find('li').find('a')['href']
+        song_url = soup.find_all('ul')[1].find('li').find('a')['href']
         #song_url = soup.find('div', {'class': 'searchItem'}).find('a', {'sc-link-primary'})['href']
-        print(song_url)
-        exit()
         return f'https://soundcloud.com{song_url}'
     # ctrl-c input
     except KeyboardInterrupt:
@@ -198,6 +198,6 @@ if __name__ == "__main__":
     #generate_songs_file_year(2010, file_name='recent')
     #driver = start_driver()
     #parse_songs_file(driver, 'recent')
-    parse_songs_file(None, 'asturianu')
+    parse_songs_file(None, 'top50esp')
 
 
