@@ -103,7 +103,7 @@ def get_soundcloud_url(driver, song: str) -> str:
         
         # open webpage in selenium
         driver.get(url)
-        sleep(3)
+        sleep(2)
         html = driver.page_source
 
         soup = BeautifulSoup(html)
@@ -202,7 +202,7 @@ def start_driver():
 if __name__ == "__main__":
     #generate_songs_file_year(2010, file_name='recent')
     driver = start_driver()
-    parse_songs_file(driver, 'asturianu')
+    parse_songs_file(driver, 'boda')
     #parse_songs_file(None, 'asturianu')
 
 

@@ -5,9 +5,9 @@ import os
 
 
 # File name to save the songs to
-tema = "top50esp"
+tema = "boda"
 # Playlist URL
-url = 'https://open.spotify.com/playlist/37i9dQZEVXbNFJfN1Vw8d9'
+url = 'https://open.spotify.com/playlist/23OlKU4PKcqE2uvYNcjrLL?si=fa4ceafac4784347'
 
 
 r = requests.get(url)
