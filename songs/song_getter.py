@@ -5,9 +5,9 @@ import os
 
 
 # File name to save the songs to
-tema = "boda"
+tema = "movingchiquilinas"
 # Playlist URL
-url = 'https://open.spotify.com/playlist/23OlKU4PKcqE2uvYNcjrLL?si=fa4ceafac4784347'
+url = 'https://open.spotify.com/playlist/72ucVWJFYYRRZFwla5wQ5q?si=82dc5332d19c4794'
 
 
 r = requests.get(url)
