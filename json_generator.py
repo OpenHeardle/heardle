@@ -202,7 +202,5 @@ def start_driver():
 if __name__ == "__main__":
     #generate_songs_file_year(2010, file_name='recent')
     driver = start_driver()
-    parse_songs_file(driver, 'playlistjulia')
+    parse_songs_file(driver, 'caribemix')
     #parse_songs_file(None, 'asturianu')
-
-
